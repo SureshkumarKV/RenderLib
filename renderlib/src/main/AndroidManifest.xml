@@ -1,0 +1,9 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.sureshkumarkv.renderlib">
+
+    <uses-feature
+        android:glEsVersion="0x00030000"
+        android:required="true"/>
+
+</manifest>
