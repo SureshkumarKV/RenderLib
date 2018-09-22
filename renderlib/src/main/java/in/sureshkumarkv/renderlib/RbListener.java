@@ -7,6 +7,8 @@ import in.sureshkumarkv.renderlib.types.RbMatrix;
  */
 
 public abstract class RbListener {
+    public void onCreateWorld(RbWorld world){}
+
     public void onSetupWorld(boolean isRecursive, int width, int height, RbInstance instance, RbWorld world){}
     public void onSetupScene(boolean isRecursive, int width, int height, RbInstance instance, RbWorld world, RbScene scene){}
     public void onSetupNode(boolean isRecursive, int width, int height, RbInstance instance, RbWorld world, RbScene scene, RbNode node, RbMatrix transform){}

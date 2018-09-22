@@ -95,6 +95,10 @@ public class RbInstance {
                 @Override
                 public void onSurfaceCreated(GL10 gl, EGLConfig config) {
                     GLUtil.uploadOrUnloadAll(mWorld, true);
+
+                    if(mListener != null){
+                        mListener.onCreateWorld(mWorld);
+                    }
                 }
 
                 @Override
